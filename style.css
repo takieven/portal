@@ -70,19 +70,19 @@ input {
 
 .navbar div {
     padding: 10px;
+}
 
-    input {
-        margin-top: 4px;
-    }
+.navbar div input {
+    margin-top: 4px;
 }
 
 .action-buttons {
     display: flex;
-    justify-content: right;
-    
-    button {
-        margin-left: 10px;
-    }
+    justify-content: right; 
+}
+
+.action-buttons button {
+    margin-left: 10px;
 }
 
 .login {
@@ -97,11 +97,11 @@ input {
     margin: 10px;
     background-color: var(--grey-three);
     border-radius: var(--medium);
-    z-index: 2;
-    
-    form {
-      padding: 10px;
-    }
+    z-index: 2; 
+}
+
+.login-form form {
+    padding: 10px;
 }
 
 .login-form.hidden {
