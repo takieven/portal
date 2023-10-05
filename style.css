@@ -1,14 +1,4 @@
-:root {
-    --bg-color: #1a191f;
-    --fg-color: #9ed5ff;
-    --grey-two: #1f1f26;
-    --grey-three: #1e1f24;
-    --grey-four: hsl(226, 48%, 18%);
-    --grey-nine: hsla(240, 6%, 7%, .3);
-    --medium: 28px;
-    --full: 20px;
-    font-size: 16px;
-}
+@import url(constants.css);
 
 h3 {
   font-size: 1.25rem;
@@ -16,9 +6,18 @@ h3 {
   font-weight: 600;
 }
 
+h4 {
+  color: var(--accent-color-two);
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: .02rem;
+  line-height: 2rem;
+}
+
 body {
     font-family: Manrope, sans;
     background-color: var(--bg-color);
+    margin: 0;
 }
 
 label {
@@ -58,12 +57,8 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    right: 0;
-    top: 0;
-    position: fixed;
-    margin: 0;
+    position: relative;
     width: 100%;
-    z-index: 1;
     background-color: var(--grey-two);
     color: var(--fg-color);
 }
@@ -121,4 +116,56 @@ input {
 
 .overlay.hidden {
     display: none;
+}
+
+/* Tables */
+
+.card {
+    position: relative;
+    margin: 50px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--full);
+    overflow: hidden;
+    padding: 0;
+}
+
+.card .header {
+    background-color: var(--grey-three);
+    padding:  .75rem 1.25rem;
+}
+
+.card .header h4 {
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    right: 0;
+}
+
+th { 
+    border: 1px solid var(--border-color);
+    color: var(--grey-five);
+}
+
+tr {
+    color: var(--grey-five);
+    text-align: center;
+}
+
+td {
+    border: 1px solid var(--border-color);
+}
+
+th:last-child {
+    border-right: 0;
+}
+
+th:first-child {
+    border-left: 0;
+}
+
+tr:last-child td {
+    border-bottom: 0;
 }
