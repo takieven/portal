@@ -152,6 +152,7 @@ th {
 tr {
     color: var(--grey-five);
     text-align: center;
+    padding: 10px;
 }
 
 td {

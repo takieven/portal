@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Top Navbar</title>
     <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet' />
-    <link rel="stylesheet" href="style.css" />
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="src/index.js"></script>
 </head>
 
 <body>
@@ -28,41 +28,37 @@
                 <form>
                     <div>
                         <label>Student ID</label><br>
-                        <input placeholder="Student id"></input>
+                        <input id="username" placeholder="Student id"></input>
                     </div>
                     <div>
                         <label>Password</label><br>
-                        <input type="password" placeholder="Password"></input>
+                        <input id="password" type="password" placeholder="Password"></input>
                     </div>
                     <div class="action-buttons">
                         <button>Cancel</button>
-                        <button type="submit">Login</button>
+                        <button id="submit" type="submit">Login</button>
                     </div>
                 </form>
             </div>
         </div>
     </nav>
 
+
+    <script src="src/app.js"></script>
+
     <div class="main">
-        <!-- Grades -->
         <div class="card">
             <div class="header">
                 <h4>Grades</h4>
             </div>
-            <table>
+            <table id="grades">
                 <tr>
-                    <th>Remark</th>
                     <th>Grade</th>
-                    <th>Period Taken</th>
                     <th>Subject Code</th>
                 </tr>
-                <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Maria Anders</td>
-                    <td>Germany</td>
-                </tr>
-            </table 
+            </table>
         </div>
+    </div>
 </body>
 
 </html>
