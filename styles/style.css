@@ -64,6 +64,10 @@ input {
 }
 
 .navbar div {
+    padding: 0px 20px;
+}
+
+.navbar .login-form {
     padding: 10px;
 }
 
