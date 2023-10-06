@@ -129,6 +129,12 @@ input {
     padding: 0;
 }
 
+@media only screen and (max-width: 800px) {
+    .card {
+        margin: 10px; 
+    }
+}
+
 .card .header {
     background-color: var(--grey-three);
     padding:  .75rem 1.25rem;
