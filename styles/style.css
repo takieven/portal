@@ -153,16 +153,18 @@ table {
 th { 
     border: 1px solid var(--border-color);
     color: var(--grey-five);
+    border-bottom: 0;
+    padding: 5px 10px;
 }
 
 tr {
     color: var(--grey-five);
     text-align: center;
-    padding: 10px;
 }
 
 td {
     border: 1px solid var(--border-color);
+    border-left: 0;
 }
 
 th:last-child {
@@ -171,6 +173,10 @@ th:last-child {
 
 th:first-child {
     border-left: 0;
+}
+
+td:last-child {
+    border-right: 0;
 }
 
 tr:last-child td {
