@@ -99,6 +99,10 @@ input {
     z-index: 2; 
 }
 
+.login-form button {
+    margin-top: 10px;
+}
+
 .login-form form {
     padding: 10px;
 }
